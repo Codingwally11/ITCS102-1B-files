@@ -1,0 +1,32 @@
+cd desktop
+mkdir sub_sec
+cd sub&sec
+mkdir surname
+cd surname
+-----------
+"creating file "
+type nul>bio.txt
+"saving file"
+crt s
+"to close file"
+alf f4 or fn alt f4
+--------------
+"view file"
+bio.txt
+-------------
+"to see the file if it exist"
+dir
+------------------
+"to rename"
+rename bio.txt newname
+----------------
+git init
+git add newname.txt
+git config --global user.email "pastorfideoswald@gmail.com"
+git commit -m "reviewer for coding"
+git remote add origin paste the link
+git push 
+git push origin main
+git push --set-upstream origin master
+may lalabas na log in
+log in molang
