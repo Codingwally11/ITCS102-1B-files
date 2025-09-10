@@ -9,8 +9,7 @@ if genre == "action":
     if length == "short":
         if decade == 2005:
             print("We Recommend: Dog's Bullets & Carnage")
-        else:
-            ("NOT AVAILABLE FOR NOW")
+        
 
 if genre == "action":
     if length == "medium":
