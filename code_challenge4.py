@@ -4,13 +4,13 @@ print("Answer a few question.")
 genre = str(input("What genre that you like? (action,comedy,sports): "))
 length = str(input("How long this should manga be?(short,medium,long): "))
 decade = eval(input("Which decade(2005,2020): "))
+
 #ACTIION 1
 if genre == "action":
     if length == "short":
         if decade == 2005:
             print("We Recommend: Dog's Bullets & Carnage")
-        else:
-            ("NOT AVAILABLE FOR NOW")
+       
 
 if genre == "action":
     if length == "medium":
