@@ -5,117 +5,100 @@ genre = str(input("What genre that you like? (action,comedy,sports): "))
 length = str(input("How long this should manga be?(short,medium,long): "))
 decade = eval(input("Which decade(2005,2020): "))
 
-#ACTIION 1
-if genre == "action":
-    if length == "short":
+#ACTIION 
+if genre.lower() == "action": 
+    if length.lower() == "short":
         if decade == 2005:
             print("We Recommend: Dog's Bullets & Carnage")
-       
+        elif decade == 2020:
+            print("We Recommend: Time Paradox Ghostwriter")
 
-if genre == "action":
-    if length == "medium":
+
+
+if genre.lower() == "action":
+    if length.lower() == "medium":
         if decade == 2005:
             print("WE RECOMMEND: Air Gear")
-
-
-if genre == "action":
-    if length == "long":
-        if decade == 2005:
-            print("WE RECOMMEND: Bleach")
-
-
-#ACTION 2
-if genre == "action":
-    if length == "short":
-        if decade == 2020:
-            print("WE RECOMMEND: Time Paradox Ghostwriter")
-
-
-if genre == "action":
-    if length == "medium":
-        if decade == 2020:
+        elif decade == 2020:
             print("WE RECOMMEND: Akatsuki no Inu")
 
 
-if genre == "action":
-    if length == "long":
-        if decade == 2020:
+
+if genre.lower() == "action":
+    if length.lower() == "long":
+        if decade == 2005:
+            print("WE RECOMMEND: Bleach")
+        elif decade == 2020:
             print("WE RECOMMEND: Tokyo Duel")
 
 
 
-#COMEDY 1
-if genre == "comedy":
-    if length == "short":
+
+
+
+#COMEDY 
+if genre.lower() == "comedy":
+    if length.lower() == "short":
         if decade == 2005:
             print("We Recommend: Angel Densetsu")
+        elif decade == 2020:
+            print("We Recommend: My Senpai is Annoying"
+                            " (Senpai ga Uzai Kouhai no Hanashi)")
 
 
-if genre == "comedy":
-    if length == "medium":
+
+if genre.lower() == "comedy":
+    if length.lower() == "medium":
         if decade == 2005:
             print("We Recommend: Cromartie High School"
                             " (Sakigake!! Cromartie Koukou)")
+        elif decade == 2020:
+            print("We Recommend: Don't Toy with Me, Miss Nagatoro"
+                            " (Ijiranaide, Nagatoro-san)")
 
-if genre == "comedy":
-    if length == "long":
+
+if genre.lower() == "comedy":
+    if length.lower() == "long":
         if decade == 2005:
             print("We Recommend: Gintama")
-
-
-#COMEDY 2
-if genre == "comedy":
-    if length == "short":
-        if decade == 2020:
-            print("We Recommend: Itoyan Goto Naki")
-
-
-if genre == "comedy":
-    if length == "medium":
-        if decade == 2020:
-            print("We Recommend: Magu-chan: God of Destruction"
-                                " (Hakaishin Magu-chan)")
-
-
-if genre == "comedy":
-    if length == "long":
-        if decade == 2020:
-            print("We Recommend: Sakamoto Days")
+        elif decade == 2020:
+            print("We Recommend: Kaguya-sama: Love is War"
+                            " (Kaguya-sama wa Kokurasetai: Tensai-tachi no Renai Zunousen")
 
 
 
-#SPORTS 1
-if genre == "sports":
-    if length == "short":
+
+
+
+#SPORTS 
+if genre.lower() == "sports":
+    if length.lower() == "short":
         if decade == 2005:
             print("We Recommend: Hajime no Ippo")
+        elif decade == 2020:
+            print("We Recommend: Run with the Wind"
+                            " (Kaze ga Tsuyoku Fuiteiru)")
 
 
-if genre == "sports":
-    if length == "medium":
+
+if genre.lower() == "sports":
+    if length.lower() == "medium":
         if decade == 2005:
             print("We Recommend: Big Windup!")
+        elif decade == 2020:
+            print("We Recommend: Sk8 the Infinity")
 
-if genre == "sports":
-    if length == "long":
+
+if genre.lower() == "sports":
+    if length.lower() == "long":
         if decade == 2005:
             print("We Recommend: Eyeshield 21")
+        elif decade == 2020:
+            print("We Recommend: Haikyuu!!")
 
-
-#SPORTS 2
-if genre == "sports":
-    if length == "short":
-        if decade == 2020:
-            print("We Recommend: Blue Lock")
-
-
-if genre == "sports":
-    if length == "medium":
-        if decade == 2020:
-            print("We Recommend: Inazuma Eleven")
-
-
-if genre == "sports":
-    if length == "long":
-        if decade == 2020:
-            print("We Recommend: Ao Ashi")
+if decade != 2005 and decade != 2020:
+     print("Sorry, we don't have any recommendations for that decade.")
+if genre.lower() != "action" and genre.lower() != "comedy" and genre.lower() != "sports":
+        print("Sorry, we don't have any recommendations for that genre.")
+if length.lower() != "short" and length.lower() != "medium" and length.lower() != "long":
+        print("Sorry, we don't have any recommendations for that length.")
